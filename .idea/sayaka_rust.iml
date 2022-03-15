@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/data_and_function/control_flow/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_and_function/function/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/data_and_function/successione_di_fibonacci/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/data_and_function/references_and_borrowing/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/hello_rust/guessing_game/target" />
       <excludeFolder url="file://$MODULE_DIR$/hello_rust/formatting_output/target" />
       <excludeFolder url="file://$MODULE_DIR$/data_and_function/celsius_to_fahrenheit/target" />
@@ -17,6 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/data_and_function/control_flow/target" />
       <excludeFolder url="file://$MODULE_DIR$/data_and_function/function/target" />
       <excludeFolder url="file://$MODULE_DIR$/data_and_function/change_data/target" />
+      <excludeFolder url="file://$MODULE_DIR$/data_and_function/references_and_borrowing/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
