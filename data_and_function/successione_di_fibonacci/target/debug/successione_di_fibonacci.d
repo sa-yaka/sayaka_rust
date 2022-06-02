@@ -1,1 +1,0 @@
-/home/back_up/sayaka/Projects/sayaka_rust/data_and_function/successione_di_fibonacci/target/debug/successione_di_fibonacci: /home/back_up/sayaka/Projects/sayaka_rust/data_and_function/successione_di_fibonacci/src/main.rs
