@@ -1,6 +1,26 @@
-// 操作字符串
-
 fn main() {
+    // _set_string();
+    // _string_slice();
+    _string_catenate();
+}
+
+// 字符串切片
+fn _string_slice() {
+    let hello = String::from("Hello Rust");
+    let hello_slice = &hello[6..]; // 切片是对 String 类型的一种引用。
+    println!("hello: {:?}", hello);
+    println!("hello slice: {:?}", hello_slice);
+
+    println!("first: {:?}", _first_word(&hello));
+    // hello.clear(); clear() 方法需要一个可变引用，而 first() 方法需要一个不可变引用
+}
+
+fn _first_word(s: &String) -> &str {
+    &s[..1]
+}
+
+// 操作字符串
+fn _set_string() {
     let mut hello = String::from("Hello World");
     println!("string: {:?}", hello);
 
@@ -43,4 +63,16 @@ fn main() {
     hello.clear(); // clear() 删除字符串中的所有字符。
     println!("hello.clear(): {:?}", hello);
     // 以上四种删除字符串的方法都是直接操作字符串。
+}
+
+fn _string_catenate() {
+    let string_hello = String::from("Hello");
+    let string_rust = String::from("Rust");
+
+    let hello = string_hello + " ";
+    println!("{:?}", hello);
+
+    let result = hello + &string_rust; // 相当于调用了 std::string 标准库中的 add() 右边的参数必须是字符串切片类型, + += 都是返回一个新的字符串。
+    println!("{:?}", result);
+    // println!("{:?}", string_hello); string_hello 的所有权被移走了，因此报错。
 }
