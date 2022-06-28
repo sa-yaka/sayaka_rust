@@ -1,1 +1,0 @@
-/home/sayaka/Projects/sayaka_rust/Module/staff_manager/target/debug/staff_manager: /home/sayaka/Projects/sayaka_rust/Module/staff_manager/src/lib.rs /home/sayaka/Projects/sayaka_rust/Module/staff_manager/src/main.rs

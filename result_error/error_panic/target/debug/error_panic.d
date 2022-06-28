@@ -1,1 +1,0 @@
-/home/sayaka/Projects/sayaka_rust/result_error/error_panic/target/debug/error_panic: /home/sayaka/Projects/sayaka_rust/result_error/error_panic/src/lib.rs /home/sayaka/Projects/sayaka_rust/result_error/error_panic/src/main.rs
