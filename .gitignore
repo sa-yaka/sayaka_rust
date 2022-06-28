@@ -1,5 +1,6 @@
 # My configurations:
 *.json
 *.TAG
+*.html
 */target/debug/*
 **/target/debug/*
