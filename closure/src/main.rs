@@ -30,26 +30,28 @@ fn generate_workout(intensity: u32, random_number: u32) {
     }
 }
 
-struct Cacher<T>
+struct Cacher<T, E>
 where
-    T: Fn(u32) -> u32,
+    T: Fn(E) -> E,
+    E: Copy,
 {
     query: T,
-    value: Option<u32>,
+    value: Option<E>,
 }
 
-impl<T> Cacher<T>
+impl<T, E> Cacher<T, E>
 where
-    T: Fn(u32) -> u32,
+    T: Fn(E) -> E,
+    E: Copy,
 {
-    fn new(query: T) -> Cacher<T> {
+    fn new(query: T) -> Cacher<T, E> {
         Cacher {
             query: query,
             value: None,
         }
     }
 
-    fn value(&mut self, arg: u32) -> u32 {
+    fn value(&mut self, arg: E) -> E {
         match self.value {
             Some(v) => v,
             None => {
@@ -58,5 +60,17 @@ where
                 v
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::Cacher;
+    #[test]
+    fn call_witch_different_values() {
+        let mut c = Cacher::new(|a| a);
+        let _v1 = c.value(1);
+        let v2 = c.value(2);
+        assert_eq!(v2, 1);
     }
 }
