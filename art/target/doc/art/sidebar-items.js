@@ -1,1 +1,0 @@
-initSidebarItems({"mod":[["kinds","定义颜色类型"],["utils","工具 目前只实现了调色板"]]});

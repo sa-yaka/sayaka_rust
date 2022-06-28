@@ -1,1 +1,0 @@
-initSidebarItems({"fn":[["mix","将两种主色调成副色 ‘’’ rust use art::utils::mix; use art::kinds::{PrimaryColor,SecondaryColor}; assert!(matches!(mix(PrimaryColor::Yellow, PrimaryColor::Blue), SecondaryColor::Green));"]]});
