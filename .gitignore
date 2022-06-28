@@ -1,4 +1,4 @@
 # My configurations:
-/target/debug
+*/target/debug
 *.json
 *.TAG
