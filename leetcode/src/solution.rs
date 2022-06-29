@@ -26,3 +26,10 @@ pub fn _roman_to_int(s: String) -> i32 {
 }
 
 // 左边大于等与右边就加  右边小于左边就减
+fn fold(acc: i32, c: i32) {
+    if acc > 4 * map[&c] {
+        acc - map[&c]
+    } else {
+        acc + map[&c]
+    }
+}
