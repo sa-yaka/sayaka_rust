@@ -13,8 +13,13 @@ fn main() {
     if let Some(link) = a.tail() {
         *link.borrow_mut() = Rc::clone(&b);
     }
+
     println!("在更改 a 后 b 的 rc 计数 = {}", Rc::strong_count(&b));
     println!("在更改 a 后 a 的 rc 计数 = {}", Rc::strong_count(&a));
+
+    // 下面一行println!将导致循环引用
+    // 我们可怜的8MB大小的main线程栈空间将被它冲垮，最终造成栈溢出
+    // println!("a next item = {:?}", a.tail());
 }
 
 #[derive(Debug)]
