@@ -1,4 +1,7 @@
 #![allow(unused)]
+
+fn main() {}
+
 use std::fmt::Display;
 fn longest_with_an_announcement<'a, T>(x: &'a str, y: &'a str, ann: T) -> &'a str
 where
